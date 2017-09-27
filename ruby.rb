@@ -24,7 +24,6 @@ class Minesweeper
 
   def create_board
     @board = [ ]
-
     @num_of_tiles.times do
       arr = []
       @num_of_tiles.times do
@@ -45,17 +44,17 @@ def insert_mines
   @num_of_mine.times do
 
     while @random_spots.length < @num_of_mine
-
       rand_num = Random.rand(@num_of_tiles**2)
+
       if !@random_spots.include?(rand_num)
         @random_spots << rand_num
       end
+
     end
   end
 end
 
 # Lets try to place the mines on board
-
   def placing_mines
     @count = 0
     @board.each.with_index do |ele,idx1|
@@ -73,8 +72,3 @@ end
 end
 
 player = Minesweeper.new(5,2)
-
-
-# [[o,o,o],
-# [o,o,o],
-# [o,o,o]]
