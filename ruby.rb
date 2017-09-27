@@ -1,5 +1,4 @@
 # Minesweeper
-
 # The game board is n by n tiles, where n is user defined
 # It contains m mines, where m is user defined, mines are randomly placed
 # For each tile that does not have a mine, there is a value corresponding to the number of adjacent mines
@@ -20,6 +19,14 @@ class Minesweeper
     create_board
     insert_mines
     placing_mines
+  end
+# Making start to the game:
+  def start
+  puts "====================================================================="
+  puts "Hello!  Welcome to a command line version of the classic Hangman."
+  print "Please type 'number of row' you want in your board "
+  choice = gets.chomp
+  choose_game(choice)
   end
 
   def create_board
