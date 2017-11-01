@@ -24,13 +24,8 @@ class Palindrom
       hash.values.each do |value|
         odd << value if value.odd?
       end
-     true if (odd.length == 1 || odd.length == 0)
+    a true if (odd.length == 1 || odd.length == 0)
   end
 
-  def converter
-    # if(conditions(@word))
-    #   # method to convert given string into palidrome
-    # end
-  end
 end
 rathi = Palindrom.new("Malayyalam")
